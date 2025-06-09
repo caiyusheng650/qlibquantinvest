@@ -1,0 +1,407 @@
+(nlpgettingstarted) E:\MYRL\qlib> python .\qlib\workflow\cli.py .\workflow_config_my_transformer_Alpha158.yaml
+[17828:MainThread](2025-06-09 12:14:06,850) INFO - qlib.qrun - [cli.py:78] - Render the template with the context: {}
+[17828:MainThread](2025-06-09 12:14:06,864) INFO - qlib.Initialization - [config.py:420] - default_conf: client.
+[17828:MainThread](2025-06-09 12:14:06,868) INFO - qlib.Initialization - [__init__.py:75] - qlib successfully initialized based on client settings.
+[17828:MainThread](2025-06-09 12:14:06,868) INFO - qlib.Initialization - [__init__.py:77] - data_path={'__DEFAULT_FREQ': WindowsPath('E:/MYRL/qlib quant invest/qlib_data/qlib_bin')}
+[17828:MainThread](2025-06-09 12:14:06,869) INFO - qlib.workflow - [exp.py:258] - Experiment 149638753976685660 starts running ...
+[17828:MainThread](2025-06-09 12:14:07,479) INFO - qlib.workflow - [recorder.py:345] - Recorder 4d588dff5b124221ad1ea8943a541519 starts running under Experiment 149638753976685660 ...
+warning: Not a git repository. Use --no-index to compare two paths outside a working tree
+usage: git diff --no-index [<options>] <path> <path>
+
+Diff output format options
+    -p, --patch           generate patch
+    -s, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=<n>]   generate diffs with <n> lines context
+    -W, --function-context
+                          generate diffs with <n> lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+    --shortstat           output only the last line of --stat
+    -X, --dirstat[=<param1,param2>...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file[=<param1,param2>...]
+                          synonym for --dirstat=files,param1,param2...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    --stat[=<width>[,<name-width>[,<count>]]]
+                          generate diffstat
+    --stat-width <width>  generate diffstat with a given width
+    --stat-name-width <width>
+                          generate diffstat with a given name width
+    --stat-graph-width <width>
+                          generate diffstat with a given graph width
+    --stat-count <count>  generate diffstat with limited lines
+    --compact-summary     generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --full-index          show full pre- and post-image object names on the "index" lines
+    --color[=<when>]      show colored diff
+    --ws-error-highlight <kind>
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --abbrev[=<n>]        use <n> digits to display object names
+    --src-prefix <prefix>
+                          show the given source prefix instead of "a/"
+    --dst-prefix <prefix>
+                          show the given destination prefix instead of "b/"
+    --line-prefix <prefix>
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --default-prefix      use default prefixes a/ and b/
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new <char>
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old <char>
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context <char>
+                          specify the character to indicate a context instead of ' '
+
+Diff rename options
+    -B, --break-rewrites[=<n>[/<m>]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=<n>]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=<n>]
+                          detect copies
+    --find-copies-harder  use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --rename-empty        use empty blobs as rename source
+    --follow              continue listing the history of a file beyond renames
+    -l <n>                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
+
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol
+                          ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --ignore-matching-lines <regex>
+                          ignore changes whose all lines match <regex>
+    --indent-heuristic    heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm <algorithm>
+                          choose a diff algorithm
+    --anchored <text>     generate diff using the "anchored diff" algorithm
+    --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words
+    --word-diff-regex <regex>
+                          use <regex> to decide what a word is
+    --color-words[=<regex>]
+                          equivalent to --word-diff=color --word-diff-regex=<regex>
+    --color-moved[=<mode>]
+                          moved lines of code are colored differently
+    --color-moved-ws <mode>
+                          how white spaces are ignored in --color-moved
+
+Other diff options
+    --relative[=<prefix>]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --text            treat all files as text
+    -R                    swap two inputs, reverse the diff
+    --exit-code           exit with 1 if there were differences, 0 otherwise
+    --quiet               disable all output of the program
+    --ext-diff            allow an external diff helper to be executed
+    --textconv            run external text conversion filters when comparing binary files
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules in the diff generation
+    --submodule[=<format>]
+                          specify how differences in submodules are shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S <string>           look for differences that change the number of occurrences of the specified string
+    -G <regex>            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat <string> in -S as extended POSIX regular expression
+    -O <file>             control the order in which files appear in the output
+    --rotate-to <path>    show the change in the specified path first
+    --skip-to <path>      skip the output to the specified path
+    --find-object <object-id>
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --output <file>       output to a specific file
+
+[17828:MainThread](2025-06-09 12:14:07,532) INFO - qlib.workflow - [recorder.py:378] - Fail to log the uncommitted code of $CWD(E:\MYRL\qlib) when run git diff.
+fatal: not a git repository (or any of the parent directories): .git
+[17828:MainThread](2025-06-09 12:14:07,586) INFO - qlib.workflow - [recorder.py:378] - Fail to log the uncommitted code of $CWD(E:\MYRL\qlib) when run git status.
+error: unknown option `cached'
+usage: git diff --no-index [<options>] <path> <path>
+
+Diff output format options
+    -p, --patch           generate patch
+    -s, --no-patch        suppress diff output
+    -u                    generate patch
+    -U, --unified[=<n>]   generate diffs with <n> lines context
+    -W, --function-context
+                          generate diffs with <n> lines context
+    --raw                 generate the diff in raw format
+    --patch-with-raw      synonym for '-p --raw'
+    --patch-with-stat     synonym for '-p --stat'
+    --numstat             machine friendly --stat
+    --shortstat           output only the last line of --stat
+    -X, --dirstat[=<param1,param2>...]
+                          output the distribution of relative amount of changes for each sub-directory
+    --cumulative          synonym for --dirstat=cumulative
+    --dirstat-by-file[=<param1,param2>...]
+                          synonym for --dirstat=files,param1,param2...
+    --check               warn if changes introduce conflict markers or whitespace errors
+    --summary             condensed summary such as creations, renames and mode changes
+    --name-only           show only names of changed files
+    --name-status         show only names and status of changed files
+    --stat[=<width>[,<name-width>[,<count>]]]
+                          generate diffstat
+    --stat-width <width>  generate diffstat with a given width
+    --stat-name-width <width>
+                          generate diffstat with a given name width
+    --stat-graph-width <width>
+                          generate diffstat with a given graph width
+    --stat-count <count>  generate diffstat with limited lines
+    --compact-summary     generate compact summary in diffstat
+    --binary              output a binary diff that can be applied
+    --full-index          show full pre- and post-image object names on the "index" lines
+    --color[=<when>]      show colored diff
+    --ws-error-highlight <kind>
+                          highlight whitespace errors in the 'context', 'old' or 'new' lines in the diff
+    -z                    do not munge pathnames and use NULs as output field terminators in --raw or --numstat
+    --abbrev[=<n>]        use <n> digits to display object names
+    --src-prefix <prefix>
+                          show the given source prefix instead of "a/"
+    --dst-prefix <prefix>
+                          show the given destination prefix instead of "b/"
+    --line-prefix <prefix>
+                          prepend an additional prefix to every line of output
+    --no-prefix           do not show any source or destination prefix
+    --default-prefix      use default prefixes a/ and b/
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    --output-indicator-new <char>
+                          specify the character to indicate a new line instead of '+'
+    --output-indicator-old <char>
+                          specify the character to indicate an old line instead of '-'
+    --output-indicator-context <char>
+                          specify the character to indicate a context instead of ' '
+
+Diff rename options
+    -B, --break-rewrites[=<n>[/<m>]]
+                          break complete rewrite changes into pairs of delete and create
+    -M, --find-renames[=<n>]
+                          detect renames
+    -D, --irreversible-delete
+                          omit the preimage for deletes
+    -C, --find-copies[=<n>]
+                          detect copies
+    --find-copies-harder  use unmodified files as source to find copies
+    --no-renames          disable rename detection
+    --rename-empty        use empty blobs as rename source
+    --follow              continue listing the history of a file beyond renames
+    -l <n>                prevent rename/copy detection if the number of rename/copy targets exceeds given limit
+
+Diff algorithm options
+    --minimal             produce the smallest possible diff
+    -w, --ignore-all-space
+                          ignore whitespace when comparing lines
+    -b, --ignore-space-change
+                          ignore changes in amount of whitespace
+    --ignore-space-at-eol
+                          ignore changes in whitespace at EOL
+    --ignore-cr-at-eol    ignore carrier-return at the end of line
+    --ignore-blank-lines  ignore changes whose lines are all blank
+    -I, --ignore-matching-lines <regex>
+                          ignore changes whose all lines match <regex>
+    --indent-heuristic    heuristic to shift diff hunk boundaries for easy reading
+    --patience            generate diff using the "patience diff" algorithm
+    --histogram           generate diff using the "histogram diff" algorithm
+    --diff-algorithm <algorithm>
+                          choose a diff algorithm
+    --anchored <text>     generate diff using the "anchored diff" algorithm
+    --word-diff[=<mode>]  show word diff, using <mode> to delimit changed words
+    --word-diff-regex <regex>
+                          use <regex> to decide what a word is
+    --color-words[=<regex>]
+                          equivalent to --word-diff=color --word-diff-regex=<regex>
+    --color-moved[=<mode>]
+                          moved lines of code are colored differently
+    --color-moved-ws <mode>
+                          how white spaces are ignored in --color-moved
+
+Other diff options
+    --relative[=<prefix>]
+                          when run from subdir, exclude changes outside and show relative paths
+    -a, --text            treat all files as text
+    -R                    swap two inputs, reverse the diff
+    --exit-code           exit with 1 if there were differences, 0 otherwise
+    --quiet               disable all output of the program
+    --ext-diff            allow an external diff helper to be executed
+    --textconv            run external text conversion filters when comparing binary files
+    --ignore-submodules[=<when>]
+                          ignore changes to submodules in the diff generation
+    --submodule[=<format>]
+                          specify how differences in submodules are shown
+    --ita-invisible-in-index
+                          hide 'git add -N' entries from the index
+    --ita-visible-in-index
+                          treat 'git add -N' entries as real in the index
+    -S <string>           look for differences that change the number of occurrences of the specified string
+    -G <regex>            look for differences that change the number of occurrences of the specified regex
+    --pickaxe-all         show all changes in the changeset with -S or -G
+    --pickaxe-regex       treat <string> in -S as extended POSIX regular expression
+    -O <file>             control the order in which files appear in the output
+    --rotate-to <path>    show the change in the specified path first
+    --skip-to <path>      skip the output to the specified path
+    --find-object <object-id>
+                          look for differences that change the number of occurrences of the specified object
+    --diff-filter [(A|C|D|M|R|T|U|X|B)...[*]]
+                          select files by diff type
+    --output <file>       output to a specific file
+
+[17828:MainThread](2025-06-09 12:14:07,644) INFO - qlib.workflow - [recorder.py:378] - Fail to log the uncommitted code of $CWD(E:\MYRL\qlib) when run git diff --cached.
+ModuleNotFoundError. CatBoostModel are skipped. (optional: maybe installing CatBoostModel can fix it.)
+ModuleNotFoundError. XGBModel is skipped(optional: maybe installing xgboost can fix it).
+[17828:MainThread](2025-06-09 12:14:09,397) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:199] - Naive Transformer:
+batch_size : 2048
+device : cuda:0
+D:\ProgramData\anaconda3\envs\nlpgettingstarted\Lib\site-packages\torch\nn\modules\transformer.py:382: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer was not TransformerEncoderLayer
+  warnings.warn(
+[17828:MainThread](2025-06-09 12:16:52,252) INFO - qlib.timer - [log.py:127] - Time cost: 161.813s | Loading data Done
+[17828:MainThread](2025-06-09 12:17:01,768) INFO - qlib.timer - [log.py:127] - Time cost: 8.577s | RobustZScoreNorm Done
+[17828:MainThread](2025-06-09 12:17:03,531) INFO - qlib.timer - [log.py:127] - Time cost: 1.761s | Fillna Done
+[17828:MainThread](2025-06-09 12:17:04,878) INFO - qlib.timer - [log.py:127] - Time cost: 0.413s | DropnaLabel Done
+E:\MYRL\qlib\qlib\data\dataset\processor.py:358: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df[cols] = t
+[17828:MainThread](2025-06-09 12:17:05,155) INFO - qlib.timer - [log.py:127] - Time cost: 0.278s | CSRankNorm Done
+[17828:MainThread](2025-06-09 12:17:05,253) INFO - qlib.timer - [log.py:127] - Time cost: 13.001s | fit & process data Done
+[17828:MainThread](2025-06-09 12:17:05,253) INFO - qlib.timer - [log.py:127] - Time cost: 174.814s | Init data Done
+[17828:MainThread](2025-06-09 12:17:05,255) WARNING - qlib.utils - [__init__.py:849] - The parameter `reweighter` with value `None` is ignored.
+[17828:MainThread](2025-06-09 12:17:06,641) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:319] - training...
+[17828:MainThread](2025-06-09 12:17:06,641) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch0:
+[17828:MainThread](2025-06-09 12:17:06,641) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:17:14,924) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:17:18,179) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -1.107207, valid -1.132247
+[17828:MainThread](2025-06-09 12:17:18,218) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch1:
+[17828:MainThread](2025-06-09 12:17:18,218) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:17:24,813) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:17:27,934) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -1.025936, valid -1.033379
+[17828:MainThread](2025-06-09 12:17:27,942) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch2:
+[17828:MainThread](2025-06-09 12:17:27,942) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:17:34,551) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:17:37,705) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -1.005623, valid -1.008197
+[17828:MainThread](2025-06-09 12:17:37,713) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch3:
+[17828:MainThread](2025-06-09 12:17:37,713) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:17:44,306) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:17:47,465) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -1.001985, valid -1.003554
+[17828:MainThread](2025-06-09 12:17:47,465) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch4:
+[17828:MainThread](2025-06-09 12:17:47,465) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:17:54,074) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:17:57,230) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.997870, valid -0.999460
+[17828:MainThread](2025-06-09 12:17:57,230) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch5:
+[17828:MainThread](2025-06-09 12:17:57,230) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:18:03,836) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:18:07,243) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.995448, valid -0.996568
+[17828:MainThread](2025-06-09 12:18:07,254) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch6:
+[17828:MainThread](2025-06-09 12:18:07,254) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:18:14,062) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:18:17,321) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.995089, valid -0.996821
+[17828:MainThread](2025-06-09 12:18:17,321) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch7:
+[17828:MainThread](2025-06-09 12:18:17,321) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:18:23,941) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:18:27,090) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.995127, valid -0.996992
+[17828:MainThread](2025-06-09 12:18:27,090) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch8:
+[17828:MainThread](2025-06-09 12:18:27,090) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:18:33,672) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:18:36,895) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.994133, valid -0.994812
+[17828:MainThread](2025-06-09 12:18:36,895) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch9:
+[17828:MainThread](2025-06-09 12:18:36,895) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:18:43,638) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:18:46,777) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.993379, valid -0.993814
+[17828:MainThread](2025-06-09 12:18:46,777) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch10:
+[17828:MainThread](2025-06-09 12:18:46,777) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:18:53,581) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:18:57,013) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.993789, valid -0.993887
+[17828:MainThread](2025-06-09 12:18:57,013) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch11:
+[17828:MainThread](2025-06-09 12:18:57,013) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:19:03,862) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:19:07,052) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.992908, valid -0.994407
+[17828:MainThread](2025-06-09 12:19:07,052) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch12:
+[17828:MainThread](2025-06-09 12:19:07,052) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:19:14,754) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:19:18,249) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.993946, valid -0.995196
+[17828:MainThread](2025-06-09 12:19:18,253) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch13:
+[17828:MainThread](2025-06-09 12:19:18,253) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:19:24,942) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:19:28,110) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.992610, valid -0.993945
+[17828:MainThread](2025-06-09 12:19:28,110) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:323] - Epoch14:
+[17828:MainThread](2025-06-09 12:19:28,110) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:324] - training...
+[17828:MainThread](2025-06-09 12:19:34,720) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:326] - evaluating...
+[17828:MainThread](2025-06-09 12:19:37,876) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:329] - train -0.993450, valid -0.993995
+[17828:MainThread](2025-06-09 12:19:37,876) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:341] - early stop
+[17828:MainThread](2025-06-09 12:19:37,876) INFO - qlib.TransformerModel - [my_pytorch_transformer.py:344] - best score: -0.993814 @ 9
+[17828:MainThread](2025-06-09 12:19:38,118) INFO - qlib.fill_placeholder - [__init__.py:798] - <PRED> lookes like a placeholder, but it can't match to any given values
+[17828:MainThread](2025-06-09 12:19:41,847) INFO - qlib.workflow - [record_temp.py:198] - Signal record 'pred.pkl' has been saved as the artifact of the Experiment 149638753976685660
+'The following are prediction results of the MyTransformerModel model.'
+                          score
+datetime   instrument
+2017-01-03 SH600000    0.028016
+           SH600005   -0.036119
+           SH600008    0.027725
+           SH600009    0.079948
+           SH600010    0.004719
+{'IC': np.float64(0.01145083463267431),
+ 'ICIR': np.float64(0.07875160288008293),
+ 'Rank IC': np.float64(0.028398617844271695),
+ 'Rank ICIR': np.float64(0.2076305259002582)}
+[17828:MainThread](2025-06-09 12:19:42,484) INFO - qlib.backtest caller - [__init__.py:93] - Create new exchange
+[17828:MainThread](2025-06-09 12:20:04,091) WARNING - qlib.online operator - [exchange.py:219] - $close field data contains nan.
+[17828:MainThread](2025-06-09 12:20:04,097) WARNING - qlib.online operator - [exchange.py:219] - $close field data contains nan.
+[17828:MainThread](2025-06-09 12:20:17,162) WARNING - qlib.BaseExecutor - [executor.py:121] - `common_infra` is not set for <qlib.backtest.executor.SimulatorExecutor object at 0x000001C93F3B14F0>
+backtest loop:   0%|                                                                                                                                                                                       | 0/871 [00:00<?, ?it/s]E:\MYRL\qlib\qlib\utils\index_data.py:492: RuntimeWarning: Mean of empty slice
+  return np.nanmean(self.data)
+backtest loop:  85%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                          | 736/871 [00:05<00:01, 128.52it/s]E:\MYRL\qlib\qlib\utils\index_data.py:492: RuntimeWarning: Mean of empty slice
+  return np.nanmean(self.data)
+backtest loop: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 871/871 [00:06<00:00, 131.32it/s] 
+[17828:MainThread](2025-06-09 12:20:23,837) INFO - qlib.workflow - [record_temp.py:515] - Portfolio analysis record 'port_analysis_1day.pkl' has been saved as the artifact of the Experiment 149638753976685660
+'The following are analysis results of benchmark return(1day).'
+                       risk
+mean               0.000477
+std                0.012295
+annualized_return  0.113561
+information_ratio  0.598699
+max_drawdown      -0.370479
+'The following are analysis results of the excess return without cost(1day).'
+                       risk
+mean               0.000255
+std                0.005205
+annualized_return  0.060739
+information_ratio  0.756432
+max_drawdown      -0.078682
+'The following are analysis results of the excess return with cost(1day).'
+                       risk
+mean               0.000072
+std                0.005204
+annualized_return  0.017248
+information_ratio  0.214828
+max_drawdown      -0.131519
+[17828:MainThread](2025-06-09 12:20:23,857) INFO - qlib.workflow - [record_temp.py:540] - Indicator analysis record 'indicator_analysis_1day.pkl' has been saved as the artifact of the Experiment 149638753976685660
+'The following are analysis results of indicators(1day).'
+     value
+ffr    1.0
+pa     0.0
+pos    0.0
+[17828:MainThread](2025-06-09 12:20:24,826) INFO - qlib.timer - [log.py:127] - Time cost: 0.000s | waiting `async_log` Done
